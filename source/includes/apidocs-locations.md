@@ -1,0 +1,3 @@
+The following endpoints return information regarding Locations.
+It is advised to use this API in order to have a uniform format for addresses.
+Country, Region, State, City, Province, and District are the parameters that make up the address format.

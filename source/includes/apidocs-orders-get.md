@@ -1,0 +1,1 @@
+Returns a list of orders. Only basic order details such as id, currency, amount, etc. will be returned. Pagination details will also be included on both the JSON payload and response headers.
