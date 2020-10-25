@@ -24,6 +24,12 @@ under the License.
 // GENERAL STUFF
 ////////////////////////////////////////////////////////////////////////////////
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat");html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
 html, body {
   color: $main-text;
   padding: 0;
@@ -60,7 +66,7 @@ html, body {
   width: $nav-width;
   background-color: $nav-bg;
   font-size: 13px;
-  font-weight: bold;
+  //font-weight: bold;
 
   // language selector for mobile devices
   .lang-selector {
@@ -141,7 +147,7 @@ html, body {
     list-style: none;
     margin: 0;
     padding: 0;
-    line-height: 28px;
+    line-height: 40px; //default 28px
   }
 
   li {
@@ -352,9 +358,10 @@ html, body {
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    //border-top: 1px solid #000; //default #ccc
+    //border-bottom: 1px solid #000; //default #ccc
+    background-color: #fff; //default #fdfdfd
+    text-align: center;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -525,6 +532,24 @@ html, body {
 
     float:right;
     clear:right;
+    
+    /// QUADX Updated Overflow
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	
+	/// QUADX Updated Height
+	max-height: 500px;
 
     box-sizing: border-box;
 
@@ -630,4 +655,25 @@ html, body {
 
 .copy-clipboard:hover {
   opacity: 0.8;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOM STYLE SOLUTIONS
+////////////////////////////////////////////////////////////////////////////////
+// ADDED FOR QUADX
+
+// Allows for code to also appear on the center of the page.
+.content {
+  .center-column + .highlight {
+  	margin-left: 50px;
+  	width: 45%;
+    pre {
+      position: static;
+      //float: none;
+      clear: none;
+      margin: 0 28px;
+      left: 0;
+      width: 100%;
+    }
+  }
 }
