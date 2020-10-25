@@ -1,0 +1,7 @@
+<p>Returns the printable order AWB.</p>
+
+<p>Accepted values for the parameter <strong>type</strong></p>
+
+<p>zebra = file format for Zebra thermal printers.</p>
+
+<p>fuji = file format for desktop printers.</p>

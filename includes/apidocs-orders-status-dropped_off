@@ -1,0 +1,10 @@
+<p>Sets the order status to dropped_off.</p>
+
+<p>Required fields
+  - tracking_number
+  - shipment
+  - branch_code</p>
+
+<p>Optional field
+  - return_address (array) - This attribute is included if the order&#39;s return address needs to be updated.
+  - parcel (array) - parcel attribute is only required if shipment&#39;s value is <code>custom</code></p>
