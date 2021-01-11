@@ -1,1 +1,0 @@
-Returns the details of an order by tracking number. Use the unique ID that was returned when you created an order. All order details are returned including the order items, charge details, pick up and delivery addresses.

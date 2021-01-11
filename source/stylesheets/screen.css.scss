@@ -533,7 +533,11 @@ html, body {
     float:right;
     clear:right;
     
-    /// QUADX Updated Overflow
+    /// QUADX Updated Overflow et al
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    //border-radius: 25px;
     overflow-x: hidden;
     overflow-y: scroll;
     white-space: pre-line;
@@ -549,7 +553,7 @@ html, body {
 	hyphens: auto;
 	
 	/// QUADX Updated Height
-	max-height: 500px;
+	max-height: 60vh;
 
     box-sizing: border-box;
 
@@ -576,6 +580,10 @@ html, body {
       background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
       color: #eee;
+      
+      // QUADX ADDITIONS
+      text-align: center;
+      
     }
   }
 }
@@ -660,12 +668,30 @@ html, body {
 ////////////////////////////////////////////////////////////////////////////////
 // CUSTOM STYLE SOLUTIONS
 ////////////////////////////////////////////////////////////////////////////////
-// ADDED FOR QUADX
+// (ADDED FOR QUADX)
+
+// Allows for colored text for HTTP Methods
+.http-get {
+	color: green;
+	font-weight: bold;
+}
+.http-post {
+	color: yellow;
+	font-weight: bold;
+}
+.http-put {
+	color: blue;
+	font-weight: bold;
+}
+.http-delete {
+	color: red;
+	font-weight: bold;
+}
 
 // Allows for code to also appear on the center of the page.
 .content {
   .center-column + .highlight {
-  	margin-left: 50px;
+  	margin-left: $main-padding + $main-padding;
   	width: 45%;
     pre {
       position: static;
@@ -674,6 +700,27 @@ html, body {
       margin: 0 28px;
       left: 0;
       width: 100%;
+      margin-bottom: 50px;
     }
   }
+}
+
+
+// Scrollbar CSS
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5238FF #cdc7ff;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: #cdc7ff;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #5238FF;
+  border-radius: 20px;
+  border: 3px solid #cdc7ff;
 }

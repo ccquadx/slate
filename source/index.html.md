@@ -2,8 +2,6 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - json
-  - php
 
 toc_footers:
   - <a href='#'>Back to the Developer Portal</a>
@@ -11,6 +9,7 @@ toc_footers:
 includes:
   - locations
   - orders
+  - printing
   
 search: true
 code_clipboard: true
@@ -101,6 +100,9 @@ eyJpYXQiOjE0NjM3MDI0MDAsImp0aSI6ImFiZTk1M2M4LTM2MjEtNDE0Yi05OWU5LWEwMWQ5NDYxYjEy
 The last part to be generated is the signature.
 To generate this, concatenate the base64 encoded header and payload with a dot and generate the hash using HMAC SHA256.
 
+
+
+
 ###### For clarity, the process is as follows: ######
 <div class="center-column"></div>
 ```js
@@ -155,9 +157,9 @@ For more clarity on the subject of JWT, you can read the [Official JWT documenta
 
 
 # Responses (Success, Errors) #
-```
-Sample Successful Response
-```
+
+> Sample Successful Response
+
 ```http
     HTTP/1.1 200 OK
     Content-Type: application/json
@@ -263,9 +265,9 @@ Sample Successful Response
   }
 ```
 
-```
-Sample Error Response (422)
-```
+
+> Sample Error Response (422)
+
 ```http
     HTTP/1.1 422 Unprocessable Entity
     Content-Type: application/json
@@ -336,9 +338,9 @@ Standard HTTP status codes are returned on every response. `200` means that the 
 
 
 # Pagination #
-``` 
-Sample Response with Pagination
-```
+ 
+> Sample Response with Pagination
+
 ```http
     HTTP/1.1 200 OK
     Content-Type: application/json
@@ -850,9 +852,9 @@ We only send JSON data to your webhook URL via HTTP POST and expect a __200 HTTP
 There is currently no user interface for setting the webhook URL so please send us an email or message us on your designated slack channel if you need to have it changed.
 
 ## Format ##
-```
-Sample Payload
-```
+
+> Sample Payload
+
   ```http
     POST /your/webhook HTTP/1.1
     Content-Type: application/json

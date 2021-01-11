@@ -24,16 +24,16 @@ under the License.
 // BACKGROUND COLORS
 ////////////////////
 $nav-bg: #fff !default; //#2E3336 default
-$examples-bg: #171717 !default; //#2E3336 default
-$code-bg: #000 !default; //#1E2224 default
-$code-annotation-bg: #191D1F !default;
+$examples-bg: #fff !default; //#2E3336 default //#171717 other
+$code-bg: #000 !default; //#1E2224 default //#000 other
+$code-annotation-bg: #000 !default; //default #191D1F
 $nav-subitem-bg: #cdc7ff !default; // #1E2224 default
 $nav-active-bg: #5238FF !default; //#0F75D4 default
 $nav-active-parent-bg: #5238FF !default; // parent links of the current section // #1E2224 default 
 $lang-select-border: #fff !default; //#000 default
 $lang-select-bg: #fff !default; /// #1E2224 default
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+$lang-select-pressed-bg: #fff !default; // color of language tab bg when mouse is pressed
 $main-bg: #E7E9EE !default; //#F3F7F9 default
 $aside-notice-bg: #8fbcd4 !default;
 $aside-warning-bg: #c97a7e !default;
@@ -48,8 +48,8 @@ $nav-text: #000 !default; // #fff default
 $nav-active-text: #fff !default;
 $nav-active-parent-text: #fff !default; // parent links of the current section
 $lang-select-text: #000 !default; // color of unselected language tab text // #fff default
-$lang-select-active-text: #fff !default; // color of selected language tab text //#fff default
-$lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
+$lang-select-active-text: #000 !default; // color of selected language tab text //#fff default
+$lang-select-pressed-text: #000 !default; // color of language tab text when mouse is pressed //#fff default
 
 
 // SIZES
@@ -57,7 +57,7 @@ $lang-select-pressed-text: #fff !default; // color of language tab text when mou
 $nav-width: 230px !default; // width of the navbar
 $examples-width: 40% !default; // portion of the screen taken up by code examples
 $logo-margin: 0px !default; // margin below logo
-$main-padding: 28px !default; // padding to left and right of content & examples
+$main-padding: 75px !default; // padding to left and right of content & examples // default 28px
 $nav-padding: 15px !default; // padding to left and right of navbar
 $nav-v-padding: 10px !default; // padding used vertically around search boxes and results
 $nav-indent: 10px !default; // extra padding for ToC subitems
